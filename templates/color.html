@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<body bgcolor = "{{couleur}}">
+		<h1>Enter your color values below:</h1>
+		<form method = "POST" action = "{{ url_for('color',reds='reds',greens='greens',blues='blues')}}">
+			<h3>Red:</h3>
+			<input type = "text" name = "reds">
+			<h3>Green:</h3>
+			<input type = "text" name = "greens">
+			<h3>Blue:</h3>
+			<input type = "text" name = "blues">
+			<input type = "submit" value="Show my color!">
+		</form>
+		<h4>*All values must be between 1 and 255</h4>
+	</body>
+</html> 
